@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kerala Tour 2026-27 | Comprehensive Itinerary</title>
+  <!-- Google Fonts & Tailwind CSS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            kerala: {
+              50: '#f0fdf4',
+              100: '#dcfce7',
+              500: '#10b981',
+              700: '#047857',
+              800: '#065f46',
+              900: '#064e3b',
+            },
+            ocean: {
+              500: '#0284c7',
+              600: '#0369a1',
+              900: '#0c4a6e',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    /* Custom scrollbar and smooth transitions */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #f1f5f9; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 9999px; }
+    ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
+    }
+    @media print {
+      .no-print { display: none !important; }
+      body { background: white !important; color: black !important; }
+      .print-full { width: 100% !important; max-width: 100% !important; margin: 0 !important; }
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased min-h-screen selection:bg-emerald-100 selection:text-emerald-900">
+
+  <!-- Notification Toast Modal -->
+  <div id="toast" class="fixed bottom-6 right-6 z-50 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none bg-slate-900 text-white px-5 py-3 rounded-xl shadow-2xl flex items-center gap-3">
+    <svg class="w-5 h-5 text-emerald-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+    <span id="toastMsg" class="text-sm font-medium">Message</span>
+  </div>
+
+  <!-- Header Banner -->
+  <header class="relative bg-gradient-to-br from-kerala-900 via-emerald-800 to-ocean-900 text-white overflow-hidden shadow-xl">
+    <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-14 relative z-10">
+      <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-6">
+        <div>
+          <div class="flex flex-wrap items-center gap-2 mb-3">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/20 border border-emerald-400/30 text-emerald-300 text-xs font-semibold uppercase tracking-wider">
+              <span>✈️ Flight HYD &rarr; COK</span>
+              <span>•</span>
+              <span>🚆 Sabari Exp TVC &rarr; SC</span>
+            </div>
+            <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-amber-400/20 border border-amber-300/40 text-amber-200 text-xs font-semibold">
+              <span>✨ Planned & Curated by Sagar</span>
+            </div>
+          </div>
+          <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white drop-shadow-sm">
+            Kerala Expedition 2026–27
+          </h1>
+          <p class="mt-2 text-emerald-100 text-sm sm:text-base max-w-2xl font-light">
+            Munnar Hills • Thekkady Wildlife • Alleppey Backwaters • Varkala Cliffs • Sree Padmanabhaswamy New Year Darshan
+          </p>
+        </div>
+        
+        <!-- Action Buttons -->
+        <div class="flex flex-wrap items-center gap-3 no-print">
+          <button onclick="copyItinerary()" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white text-sm font-medium transition duration-200">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+            <span>Copy Plan</span>
+          </button>
+          <button onclick="window.print()" class="inline-flex items-center gap-2 px-4 py-2.5 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-slate-950 text-sm font-semibold shadow-lg shadow-emerald-900/30 transition duration-200">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 17h2a2 2 0 002-2v-4a2 2 0 00-2-2H5a2 2 0 00-2 2v4a2 2 0 002 2h2m2 4h6a2 2 0 002-2v-4a2 2 0 00-2-2H9a2 2 0 00-2 2v4a2 2 0 002 2zm8-12V5a2 2 0 00-2-2H9a2 2 0 00-2 2v4h10z"></path></svg>
+            <span>Print PDF</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Ribbon -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 pt-8 border-t border-emerald-700/60 text-emerald-100">
+        <div class="bg-white/5 backdrop-blur-sm rounded-xl p-3.5 border border-white/10">
+          <div class="text-xs uppercase tracking-wider text-emerald-300 font-medium">Trip Window</div>
+          <div class="text-lg font-bold text-white mt-0.5">24 Dec – 03 Jan</div>
+          <div class="text-xs text-emerald-200/70">11 Days (9 Nights in Kerala)</div>
+        </div>
+        <div class="bg-white/5 backdrop-blur-sm rounded-xl p-3.5 border border-white/10">
+          <div class="text-xs uppercase tracking-wider text-emerald-300 font-medium">Leaves Needed</div>
+          <div class="text-lg font-bold text-emerald-300 mt-0.5">Only 4 Days</div>
+          <div class="text-xs text-emerald-200/70">Dec 28, 29, 30 & 31</div>
+        </div>
+        <div class="bg-white/5 backdrop-blur-sm rounded-xl p-3.5 border border-white/10">
+          <div class="text-xs uppercase tracking-wider text-emerald-300 font-medium">Total Driving Route</div>
+          <div class="text-lg font-bold text-white mt-0.5">~780 - 850 km</div>
+          <div class="text-xs text-emerald-200/70">Only 5 Hotel Bases</div>
+        </div>
+        <div class="bg-white/5 backdrop-blur-sm rounded-xl p-3.5 border border-white/10">
+          <div class="text-xs uppercase tracking-wider text-emerald-300 font-medium">Return Train</div>
+          <div class="text-lg font-bold text-emerald-300 mt-0.5">Sabari Exp #17229</div>
+          <div class="text-xs text-emerald-200/70">Depart Jan 2 &bull; Arrive Jan 3 (11 AM)</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Navigation Tabs -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+    <div class="flex items-center justify-between border-b border-slate-200 pb-4 mb-8 no-print">
+      <nav class="flex space-x-2 sm:space-x-4" aria-label="Tabs">
+        <button onclick="switchTab('timeline')" id="tabBtn-timeline" class="tab-btn px-4 py-2 text-sm font-semibold rounded-lg bg-emerald-700 text-white transition">
+          Day-by-Day View
+        </button>
+        <button onclick="switchTab('table')" id="tabBtn-table" class="tab-btn px-4 py-2 text-sm font-semibold rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition">
+          Summary Table
+        </button>
+        <button onclick="switchTab('temple')" id="tabBtn-temple" class="tab-btn px-4 py-2 text-sm font-semibold rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition">
+          New Year Temple Guide
+        </button>
+        <button onclick="switchTab('logistics')" id="tabBtn-logistics" class="tab-btn px-4 py-2 text-sm font-semibold rounded-lg text-slate-600 hover:text-slate-900 hover:bg-slate-100 transition">
+          Transit & Logistics
+        </button>
+      </nav>
+      <div class="text-xs text-slate-500 hidden md:block">
+        Linear Route: <span class="font-medium text-slate-700">North &rarr; South Kerala</span>
+      </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- TAB 1: DAY-BY-DAY TIMELINE -->
+    <!-- ========================================================================= -->
+    <div id="tab-timeline" class="tab-content space-y-6">
+      
+      <!-- Day 1 -->
+      <div class="glass-card rounded-2xl border border-slate-200 shadow-sm p-6 hover:shadow-md transition">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between pb-4 border-b border-slate-100 gap-2">
+          <div class="flex items-center gap-3">
+            <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider">Day 1</span>
+            <h2 class="text-lg font-bold text-slate-900">Dec 24 (Thu) &bull; Hyderabad &rarr; Kochi &rarr; Munnar</h2>
+          </div>
+          <div class="flex items-center gap-2 text-xs font-medium text-slate-600 bg-slate-100 px-3 py-1 rounded-lg">
+            <span>📍 Stay: Munnar (Night 1)</span>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+          <div class="md:col-span-2 space-y-3">
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Board early morning flight from Hyderabad (recommended 06:00 AM SpiceJet SG 703 or 10:55 AM IndiGo) to Cochin International Airport (COK). Meet your cab driver and start the scenic mountain ascent via NH 85.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-600">
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-600 font-bold">•</span>
+                <span><strong>En Route:</strong> Stop at Cheeyappara and Valara stepped waterfalls for roadside photography and fresh coconut water.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-600 font-bold">•</span>
+                <span><strong>5:00 PM Arrival:</strong> Check into your Munnar resort in daylight. Evenings get foggy and chilly quickly; enjoy hot cardamom tea from your balcony overlooking the tea valleys.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-slate-50 rounded-xl p-4 border border-slate-100 text-xs space-y-2">
+            <div class="font-bold text-slate-700 uppercase tracking-wide">Day 1 Logistics</div>
+            <div class="flex justify-between text-slate-600"><span>Airport &rarr; Munnar:</span><span class="font-medium text-slate-900">107 km (~3.5 hrs)</span></div>
+            <div class="flex justify-between text-slate-600"><span>Target Arrival:</span><span class="font-medium text-emerald-700">~5:00 PM</span></div>
+            <div class="flex justify-between text-slate-600"><span>Leave Required:</span><span class="font-medium text-slate-900">Holiday declared</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Day 2 -->
+      <div class="glass-card rounded-2xl border border-slate-200 shadow-sm p-6 hover:shadow-md transition">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between pb-4 border-b border-slate-100 gap-2">
+          <div class="flex items-center gap-3">
+            <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider">Day 2</span>
+            <h2 class="text-lg font-bold text-slate-900">Dec 25 (Fri) &bull; Christmas in the Munnar Hills</h2>
+          </div>
+          <div class="flex items-center gap-2 text-xs font-medium text-slate-600 bg-slate-100 px-3 py-1 rounded-lg">
+            <span>📍 Stay: Munnar (Night 2)</span>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+          <div class="md:col-span-2 space-y-3">
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Full day exploring Munnar’s iconic attractions. Start early to avoid holiday queues at the national park gates.
+            </p>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs text-slate-600">
+              <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
+                <span class="font-bold text-slate-800 block">Morning (08:30 AM):</span>
+                Eravikulam National Park (Rajamalai). Take the forest department bus to spot the endangered Nilgiri Tahr mountain goat (₹200 ticket).
+              </div>
+              <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
+                <span class="font-bold text-slate-800 block">Midday:</span>
+                KDHP Tata Tea Museum (₹150 ticket) to watch tea processing from white to black tea and sample fresh tea leaves.
+              </div>
+              <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
+                <span class="font-bold text-slate-800 block">Afternoon:</span>
+                Mattupetty Dam reservoir & Echo Point shouting valley surrounded by Western Ghats ridges.
+              </div>
+              <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
+                <span class="font-bold text-slate-800 block">Late Afternoon:</span>
+                Munnar Rose Garden / Floriculture Centre (₹50 entry) with flower terrace viewpoints.
+              </div>
+            </div>
+          </div>
+          <div class="bg-slate-50 rounded-xl p-4 border border-slate-100 text-xs space-y-2">
+            <div class="font-bold text-slate-700 uppercase tracking-wide">Key Tips</div>
+            <div class="text-slate-600">Pre-book Eravikulam tickets online to skip 1-hour ticket queues. Carry light woolens as temperatures drop to 12°C in Munnar at night.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Day 3 -->
+      <div class="glass-card rounded-2xl border border-slate-200 shadow-sm p-6 hover:shadow-md transition">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between pb-4 border-b border-slate-100 gap-2">
+          <div class="flex items-center gap-3">
+            <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider">Day 3</span>
+            <h2 class="text-lg font-bold text-slate-900">Dec 26 (Sat) &bull; Munnar &rarr; Thekkady (Kumily)</h2>
+          </div>
+          <div class="flex items-center gap-2 text-xs font-medium text-slate-600 bg-slate-100 px-3 py-1 rounded-lg">
+            <span>📍 Stay: Thekkady (Night 3)</span>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+          <div class="md:col-span-2 space-y-3">
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Check out at 09:00 AM and take the scenic Lockhart Gap Road toward Thekkady. The road winds through dense cardamom and pepper forests.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-600">
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-600 font-bold">•</span>
+                <span><strong>En route Adventure:</strong> Optional longest river-crossing flying fox zip-line near Anachal (~₹1,400 with GoPro footage).</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-600 font-bold">•</span>
+                <span><strong>Spice Plantation Tour:</strong> 1-hour guided walking tour explaining medicinal herbs (shatavari, bhringraj, vanilla, cinnamon). Buy authentic unadulterated spices directly from estate outlets.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-600 font-bold">•</span>
+                <span><strong>Evening Cultural Shows (5:30 PM & 7:00 PM):</strong> Live theatrical Kathakali classical dance and high-octane Kalaripayattu martial arts (~₹300 combo).</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-slate-50 rounded-xl p-4 border border-slate-100 text-xs space-y-2">
+            <div class="font-bold text-slate-700 uppercase tracking-wide">Transit Info</div>
+            <div class="flex justify-between text-slate-600"><span>Distance:</span><span class="font-medium text-slate-900">90 km (~3 hrs)</span></div>
+            <div class="flex justify-between text-slate-600"><span>Route:</span><span class="font-medium text-slate-900">Munnar-Kumily Hwy</span></div>
+            <div class="flex justify-between text-slate-600"><span>Activity Cost:</span><span class="font-medium text-slate-900">Spice: ₹100 | Show: ₹300</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Day 4 -->
+      <div class="glass-card rounded-2xl border border-slate-200 shadow-sm p-6 hover:shadow-md transition">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between pb-4 border-b border-slate-100 gap-2">
+          <div class="flex items-center gap-3">
+            <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider">Day 4</span>
+            <h2 class="text-lg font-bold text-slate-900">Dec 27 (Sun) &bull; Thekkady &rarr; Alleppey (Alappuzha)</h2>
+          </div>
+          <div class="flex items-center gap-2 text-xs font-medium text-slate-600 bg-slate-100 px-3 py-1 rounded-lg">
+            <span>📍 Stay: Alleppey (Night 4)</span>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+          <div class="md:col-span-2 space-y-3">
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Early morning wildlife sighting inside Periyar Tiger Reserve, followed by a downhill road drive to the Arabian backwaters.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-600">
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-600 font-bold">•</span>
+                <span><strong>07:30 AM Periyar Lake Boat Safari:</strong> 1.5-hour boating on the reservoir to view wild gaur (bison), sambar deer, and birds along the water’s edge (Bus: ₹75, Boat: ₹255).</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-600 font-bold">•</span>
+                <span><strong>Drive to Backwaters:</strong> Descend via Kottayam toward Alleppey (~4 hours). Check into your private houseboat or waterfront lagoon resort.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-600 font-bold">•</span>
+                <span><strong>Sunset:</strong> Watch the sunset over Vembanad Lake or visit Alleppey Beach and its historic 160-year-old pier.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-slate-50 rounded-xl p-4 border border-slate-100 text-xs space-y-2">
+            <div class="font-bold text-slate-700 uppercase tracking-wide">Transit Info</div>
+            <div class="flex justify-between text-slate-600"><span>Distance:</span><span class="font-medium text-slate-900">139 km (~4 hrs)</span></div>
+            <div class="flex justify-between text-slate-600"><span>Route:</span><span class="font-medium text-slate-900">NH 183 via Kottayam</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Day 5 -->
+      <div class="glass-card rounded-2xl border border-slate-200 shadow-sm p-6 hover:shadow-md transition">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between pb-4 border-b border-slate-100 gap-2">
+          <div class="flex items-center gap-3">
+            <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-bold uppercase tracking-wider">Day 5</span>
+            <h2 class="text-lg font-bold text-slate-900">Dec 28 (Mon) &bull; Alleppey Canal Waterways & Kuttanad Life</h2>
+          </div>
+          <div class="flex items-center gap-2 text-xs font-medium text-slate-600 bg-slate-100 px-3 py-1 rounded-lg">
+            <span>📍 Stay: Alleppey (Night 5) &bull; Leave 1/4</span>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+          <div class="md:col-span-2 space-y-3">
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Dedicate the day to authentic village life away from big tourist boats. Houseboats stay in wide channels, while small motorized Shikaras and hand-rowed canoes navigate the interior canals where locals live.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-600">
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 font-bold">•</span>
+                <span><strong>Morning Shikara / Canoe Ride (~₹1,000 for 2 hrs):</strong> Drift under canopy bridges, watching ducks, village schools, and coconut lagoon paths.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 font-bold">•</span>
+                <span><strong>Authentic Kuttanad Lunch:</strong> Enjoy hot parottas, red rice, pearl spot fish (Karimeen Pollichathu), or Kerala Sadhya served on banana leaf.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 font-bold">•</span>
+                <span><strong>Evening:</strong> Unwind with fresh tender coconut water and peaceful backwater sunsets.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-blue-50/60 rounded-xl p-4 border border-blue-100 text-xs space-y-2">
+            <div class="font-bold text-blue-900 uppercase tracking-wide">Pacing Highlight</div>
+            <div class="text-slate-700">Having 2 nights in Alleppey eliminates packing and checking out for a day, giving you a relaxing pause right before the coastal stretch.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Day 6 -->
+      <div class="glass-card rounded-2xl border border-slate-200 shadow-sm p-6 hover:shadow-md transition">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between pb-4 border-b border-slate-100 gap-2">
+          <div class="flex items-center gap-3">
+            <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-bold uppercase tracking-wider">Day 6</span>
+            <h2 class="text-lg font-bold text-slate-900">Dec 29 (Tue) &bull; Alleppey &rarr; Jatayu Earth’s Center &rarr; Varkala</h2>
+          </div>
+          <div class="flex items-center gap-2 text-xs font-medium text-slate-600 bg-slate-100 px-3 py-1 rounded-lg">
+            <span>📍 Stay: Varkala (Night 6) &bull; Leave 2/4</span>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+          <div class="md:col-span-2 space-y-3">
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Travel south toward the Arabian coastline with a stop at Chadayamangalam to visit the world's largest bird sculpture.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-600">
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 font-bold">•</span>
+                <span><strong>Jatayu Earth’s Center (11:30 AM – 2:00 PM):</strong> Take the Swiss cable car up the rocky hill (entry ~₹600 with cable car) to witness the 200-ft giant Jatayu sculpture and panoramic landscape views.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 font-bold">•</span>
+                <span><strong>Reach Varkala (3:30 PM):</strong> Check into your cliff-top resort.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 font-bold">•</span>
+                <span><strong>North Cliff Sunset:</strong> Walk along the cliff path overlooking Papanasam Beach; sip iced coffee at Bohemian cliff cafes as the sun sinks into the Arabian Sea.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-slate-50 rounded-xl p-4 border border-slate-100 text-xs space-y-2">
+            <div class="font-bold text-slate-700 uppercase tracking-wide">Transit Info</div>
+            <div class="flex justify-between text-slate-600"><span>Alleppey &rarr; Jatayu:</span><span class="font-medium text-slate-900">102 km (~2.5 hrs)</span></div>
+            <div class="flex justify-between text-slate-600"><span>Jatayu &rarr; Varkala:</span><span class="font-medium text-slate-900">37 km (~1 hr)</span></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Day 7 -->
+      <div class="glass-card rounded-2xl border border-slate-200 shadow-sm p-6 hover:shadow-md transition">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between pb-4 border-b border-slate-100 gap-2">
+          <div class="flex items-center gap-3">
+            <span class="px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-bold uppercase tracking-wider">Day 7</span>
+            <h2 class="text-lg font-bold text-slate-900">Dec 30 (Wed) &bull; Varkala Beaches, Water Sports & Cliff Cafes</h2>
+          </div>
+          <div class="flex items-center gap-2 text-xs font-medium text-slate-600 bg-slate-100 px-3 py-1 rounded-lg">
+            <span>📍 Stay: Varkala (Night 7) &bull; Leave 3/4</span>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+          <div class="md:col-span-2 space-y-3">
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Full relaxing day along Kerala's premier cliff beach. Experience coastal adventures or lounge by the sea.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-600">
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 font-bold">•</span>
+                <span><strong>Morning Coastal Paramotoring (Optional):</strong> Fly over the red cliffs and the coastline with Fly Varkala (~₹4,500 + ₹500 video).</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 font-bold">•</span>
+                <span><strong>Beach Explorations:</strong> Explore South Cliff, Odayam Beach, and Black Sand Beach.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-blue-600 font-bold">•</span>
+                <span><strong>Evening Vibe:</strong> Browse Tibetan handicraft stores, aromatic spice stalls, and try fresh seafood or woodfired pizza at cliffside cafes.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-slate-50 rounded-xl p-4 border border-slate-100 text-xs space-y-2">
+            <div class="font-bold text-slate-700 uppercase tracking-wide">Highlights</div>
+            <div class="text-slate-600">Varkala offers a relaxed hippie coastal vibe similar to Goa's cliffs, but with unique reddish laterite formations.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Day 8 -->
+      <div class="glass-card rounded-2xl border border-slate-200 shadow-sm p-6 hover:shadow-md transition">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between pb-4 border-b border-slate-100 gap-2">
+          <div class="flex items-center gap-3">
+            <span class="px-3 py-1 rounded-full bg-purple-100 text-purple-800 text-xs font-bold uppercase tracking-wider">Day 8</span>
+            <h2 class="text-lg font-bold text-slate-900">Dec 31 (Thu) &bull; Poovar Mangrove Estuary & Check-in Near Temple</h2>
+          </div>
+          <div class="flex items-center gap-2 text-xs font-medium text-slate-600 bg-slate-100 px-3 py-1 rounded-lg">
+            <span>📍 Stay: Trivandrum East Fort (Night 8) &bull; Leave 4/4</span>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+          <div class="md:col-span-2 space-y-3">
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Check out from Varkala around 09:30 AM and drive south past Trivandrum down to Poovar Island.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-600">
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">•</span>
+                <span><strong>Poovar Island Boat Safari (12:30 PM – 2:00 PM):</strong> 1-hour cruise through dense mangrove waterways out to Golden Sand Beach, where the Neyyar River meets the Arabian Sea (~₹2,000/boat).</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">•</span>
+                <span><strong>Check-in Near Temple (5:00 PM):</strong> Check in at a hotel in <strong>East Fort / Pazhavangadi</strong>, walking distance from Sree Padmanabhaswamy Temple.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-purple-600 font-bold">•</span>
+                <span><strong>New Year’s Eve Prep:</strong> Buy/iron your Dhoti/Mundu and Saree for tomorrow morning's darshan. Enjoy dinner and rest early to beat the morning rush.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-amber-50 rounded-xl p-4 border border-amber-200 text-xs space-y-2">
+            <div class="font-bold text-amber-900 uppercase tracking-wide">Key Strategic Move</div>
+            <div class="text-amber-800">Staying near East Fort tonight ensures you can simply walk to the temple at 05:45 AM without cab delays, morning traffic, or parking hassles.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Day 9 -->
+      <div class="glass-card rounded-2xl border border-slate-200 shadow-sm p-6 hover:shadow-md transition">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between pb-4 border-b border-slate-100 gap-2">
+          <div class="flex items-center gap-3">
+            <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold uppercase tracking-wider">Day 9</span>
+            <h2 class="text-lg font-bold text-slate-900">Jan 1 (Fri) &bull; New Year Darshan & Azhimala Shiva Temple</h2>
+          </div>
+          <div class="flex items-center gap-2 text-xs font-medium text-slate-600 bg-slate-100 px-3 py-1 rounded-lg">
+            <span>📍 Stay: Trivandrum East Fort (Night 9) &bull; Holiday</span>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+          <div class="md:col-span-2 space-y-3">
+            <p class="text-slate-600 text-sm leading-relaxed">
+              Start the first day of the year with sacred morning blessings at the world-renowned Padmanabhaswamy Temple, followed by coastal heritage sights.
+            </p>
+            <ul class="space-y-2 text-xs text-slate-600">
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-600 font-bold">•</span>
+                <span><strong>05:45 AM – 07:30 AM:</strong> Walk to the East Gate for the <strong>06:30 AM Darshan slot</strong>. View the majestic 18-foot reclining Ananthasayanam idol across three temple doors.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-600 font-bold">•</span>
+                <span><strong>Afternoon:</strong> Drive 20 mins to <strong>Azhimala Shiva Temple</strong> to see the dramatic 58-foot seaside Gangadhareswara Shiva statue carved against ocean waves.</span>
+              </li>
+              <li class="flex items-start gap-2">
+                <span class="text-emerald-600 font-bold">•</span>
+                <span><strong>Sunset at Kovalam:</strong> Climb the 120-foot Kovalam Lighthouse (₹20 entry) for 360-degree aerial views of Lighthouse and Hawa beaches.</span>
+              </li>
+            </ul>
+          </div>
+          <div class="bg-slate-50 rounded-xl p-4 border border-slate-100 text-xs space-y-2">
+            <div class="font-bold text-slate-700 uppercase tracking-wide">Temple Dress Code</div>
+            <div class="text-slate-600">• <strong>Men:</strong> Plain Dhoti/Mundu (bare torso; shoulder shawl allowed).</div>
+            <div class="text-slate-600">• <strong>Women:</strong> Saree or Set-Mundu only.</div>
+            <div class="text-slate-600">• <strong>Prohibited:</strong> Phones, watches, pants, leather.</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Day 10 & 11 -->
+      <div class="glass-card rounded-2xl border border-slate-200 shadow-sm p-6 hover:shadow-md transition">
+        <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between pb-4 border-b border-slate-100 gap-2">
+          <div class="flex items-center gap-3">
+            <span class="px-3 py-1 rounded-full bg-slate-200 text-slate-800 text-xs font-bold uppercase tracking-wider">Day 10 &bull; Jan 2</span>
+            <h2 class="text-lg font-bold text-slate-900">Jan 2 (Sat) &bull; Board Sabari Express (#17229) at 06:45 AM</h2>
+          </div>
+          <div class="flex items-center gap-2 text-xs font-medium text-slate-600 bg-slate-100 px-3 py-1 rounded-lg">
+            <span>🚆 In Transit on Train &bull; Weekend Off</span>
+          </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-4">
+          <div class="md:col-span-2 space-y-3 text-xs text-slate-600">
+            <p class="text-sm text-slate-700">
+              <strong>05:45 AM:</strong> Check out from East Fort hotel. Trivandrum Central (TVC) railway station is only 1.5 km away (a quick 5–8 min auto/cab ride).
+            </p>
+            <p>
+              <strong>06:45 AM:</strong> Sabari Express departs Platform 1. Relax, read, and look back on your mountain and coastal experiences as the train heads north along Kerala and Andhra Pradesh.
+            </p>
+            <div class="p-3 bg-emerald-50 text-emerald-900 rounded-lg font-medium border border-emerald-200">
+              <strong>Day 11 &bull; Jan 3 (Sun) 11:00 AM:</strong> Train arrives at <strong>Secunderabad Junction (SC)</strong>. You have the entire Sunday afternoon to rest, unpack, and settle before work resumes on Monday!
+            </div>
+          </div>
+          <div class="bg-slate-50 rounded-xl p-4 border border-slate-100 text-xs space-y-2">
+            <div class="font-bold text-slate-700 uppercase tracking-wide">Train Logistics</div>
+            <div class="flex justify-between text-slate-600"><span>Train:</span><span class="font-medium text-slate-900">Sabari Exp (#17229)</span></div>
+            <div class="flex justify-between text-slate-600"><span>Departure TVC:</span><span class="font-medium text-slate-900">06:45 AM (Sat, Jan 2)</span></div>
+            <div class="flex justify-between text-slate-600"><span>Arrival SC:</span><span class="font-medium text-emerald-700">11:00 AM (Sun, Jan 3)</span></div>
+            <div class="flex justify-between text-slate-600"><span>Journey Time:</span><span class="font-medium text-slate-900">28h 15m</span></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- TAB 2: SUMMARY TABLE -->
+    <!-- ========================================================================= -->
+    <div id="tab-table" class="tab-content hidden">
+      <div class="glass-card rounded-2xl border border-slate-200 shadow-sm overflow-hidden">
+        <div class="p-6 border-b border-slate-100 flex justify-between items-center">
+          <div>
+            <h3 class="text-lg font-bold text-slate-900">Master Schedule & Route Table</h3>
+            <p class="text-xs text-slate-500 mt-0.5">Linear North-to-South Kerala Circuit with 5 Hotel Bases</p>
+          </div>
+          <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-bold">11 Days Total</span>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse text-xs sm:text-sm">
+            <thead>
+              <tr class="bg-slate-100/80 text-slate-700 border-b border-slate-200 font-semibold">
+                <th class="p-3.5 sm:p-4">Date & Day</th>
+                <th class="p-3.5 sm:p-4">Transit / Route</th>
+                <th class="p-3.5 sm:p-4">Primary Highlights</th>
+                <th class="p-3.5 sm:p-4">Hotel Base (Night)</th>
+                <th class="p-3.5 sm:p-4">Work Status</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-slate-100 text-slate-600">
+              <tr class="hover:bg-slate-50/80 transition">
+                <td class="p-3.5 sm:p-4 font-bold text-slate-900">Dec 24 (Thu)</td>
+                <td class="p-3.5 sm:p-4">Flight HYD &rarr; COK; Drive to Munnar</td>
+                <td class="p-3.5 sm:p-4">Cheeyappara Falls, reach resort by 5:00 PM</td>
+                <td class="p-3.5 sm:p-4 font-semibold text-emerald-800">Munnar (Night 1)</td>
+                <td class="p-3.5 sm:p-4"><span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-medium text-xs">Holiday</span></td>
+              </tr>
+              <tr class="hover:bg-slate-50/80 transition">
+                <td class="p-3.5 sm:p-4 font-bold text-slate-900">Dec 25 (Fri)</td>
+                <td class="p-3.5 sm:p-4">Munnar Sightseeing Loop</td>
+                <td class="p-3.5 sm:p-4">Eravikulam Park (Nilgiri Tahr), Tata Tea Museum, Dam</td>
+                <td class="p-3.5 sm:p-4 font-semibold text-emerald-800">Munnar (Night 2)</td>
+                <td class="p-3.5 sm:p-4"><span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-medium text-xs">Christmas</span></td>
+              </tr>
+              <tr class="hover:bg-slate-50/80 transition">
+                <td class="p-3.5 sm:p-4 font-bold text-slate-900">Dec 26 (Sat)</td>
+                <td class="p-3.5 sm:p-4">Munnar &rarr; Thekkady (90 km / 3 hrs)</td>
+                <td class="p-3.5 sm:p-4">Spice garden walk, zip line, Kathakali & Kalaripayattu</td>
+                <td class="p-3.5 sm:p-4 font-semibold text-emerald-800">Thekkady (Night 3)</td>
+                <td class="p-3.5 sm:p-4"><span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-medium text-xs">Weekend</span></td>
+              </tr>
+              <tr class="hover:bg-slate-50/80 transition">
+                <td class="p-3.5 sm:p-4 font-bold text-slate-900">Dec 27 (Sun)</td>
+                <td class="p-3.5 sm:p-4">Thekkady &rarr; Alleppey (139 km / 4 hrs)</td>
+                <td class="p-3.5 sm:p-4">Morning Periyar Lake boat safari, sunset at backwaters</td>
+                <td class="p-3.5 sm:p-4 font-semibold text-emerald-800">Alleppey (Night 4)</td>
+                <td class="p-3.5 sm:p-4"><span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-medium text-xs">Weekend</span></td>
+              </tr>
+              <tr class="hover:bg-slate-50/80 transition">
+                <td class="p-3.5 sm:p-4 font-bold text-slate-900">Dec 28 (Mon)</td>
+                <td class="p-3.5 sm:p-4">Alleppey Local Waterways</td>
+                <td class="p-3.5 sm:p-4">Shikara canal ride through Kuttanad village, Karimeen lunch</td>
+                <td class="p-3.5 sm:p-4 font-semibold text-emerald-800">Alleppey (Night 5)</td>
+                <td class="p-3.5 sm:p-4"><span class="px-2 py-0.5 rounded bg-amber-100 text-amber-800 font-medium text-xs">Leave 1</span></td>
+              </tr>
+              <tr class="hover:bg-slate-50/80 transition">
+                <td class="p-3.5 sm:p-4 font-bold text-slate-900">Dec 29 (Tue)</td>
+                <td class="p-3.5 sm:p-4">Alleppey &rarr; Jatayu &rarr; Varkala (139 km)</td>
+                <td class="p-3.5 sm:p-4">Giant Jatayu rock sculpture & cable car; North Cliff sunset</td>
+                <td class="p-3.5 sm:p-4 font-semibold text-emerald-800">Varkala (Night 6)</td>
+                <td class="p-3.5 sm:p-4"><span class="px-2 py-0.5 rounded bg-amber-100 text-amber-800 font-medium text-xs">Leave 2</span></td>
+              </tr>
+              <tr class="hover:bg-slate-50/80 transition">
+                <td class="p-3.5 sm:p-4 font-bold text-slate-900">Dec 30 (Wed)</td>
+                <td class="p-3.5 sm:p-4">Varkala Coastal Day</td>
+                <td class="p-3.5 sm:p-4">Beach relaxation, cliff cafes, paramotoring, Tibetan shops</td>
+                <td class="p-3.5 sm:p-4 font-semibold text-emerald-800">Varkala (Night 7)</td>
+                <td class="p-3.5 sm:p-4"><span class="px-2 py-0.5 rounded bg-amber-100 text-amber-800 font-medium text-xs">Leave 3</span></td>
+              </tr>
+              <tr class="hover:bg-slate-50/80 transition">
+                <td class="p-3.5 sm:p-4 font-bold text-slate-900">Dec 31 (Thu)</td>
+                <td class="p-3.5 sm:p-4">Varkala &rarr; Poovar &rarr; East Fort Trivandrum</td>
+                <td class="p-3.5 sm:p-4">Poovar mangrove safari; check in walking distance to temple</td>
+                <td class="p-3.5 sm:p-4 font-semibold text-purple-800">Trivandrum East Fort (Night 8)</td>
+                <td class="p-3.5 sm:p-4"><span class="px-2 py-0.5 rounded bg-amber-100 text-amber-800 font-medium text-xs">Leave 4</span></td>
+              </tr>
+              <tr class="hover:bg-slate-50/80 transition">
+                <td class="p-3.5 sm:p-4 font-bold text-slate-900">Jan 1 (Fri)</td>
+                <td class="p-3.5 sm:p-4">Trivandrum & Kovalam Day Tour</td>
+                <td class="p-3.5 sm:p-4"><strong>06:30 AM New Year Darshan</strong>, Azhimala Shiva statue, Lighthouse</td>
+                <td class="p-3.5 sm:p-4 font-semibold text-purple-800">Trivandrum East Fort (Night 9)</td>
+                <td class="p-3.5 sm:p-4"><span class="px-2 py-0.5 rounded bg-emerald-100 text-emerald-800 font-medium text-xs">New Year</span></td>
+              </tr>
+              <tr class="hover:bg-slate-50/80 transition">
+                <td class="p-3.5 sm:p-4 font-bold text-slate-900">Jan 2 (Sat)</td>
+                <td class="p-3.5 sm:p-4">Board Sabari Express (#17229) at 06:45 AM</td>
+                <td class="p-3.5 sm:p-4">Depart TVC station; relaxed daytime scenic train journey</td>
+                <td class="p-3.5 sm:p-4 font-medium text-slate-500">On Train</td>
+                <td class="p-3.5 sm:p-4"><span class="px-2 py-0.5 rounded bg-slate-100 text-slate-700 font-medium text-xs">Weekend</span></td>
+              </tr>
+              <tr class="hover:bg-slate-50/80 transition bg-emerald-50/50">
+                <td class="p-3.5 sm:p-4 font-bold text-emerald-950">Jan 3 (Sun)</td>
+                <td class="p-3.5 sm:p-4">Arrive Secunderabad (SC) 11:00 AM</td>
+                <td class="p-3.5 sm:p-4">Home arrival; free afternoon to unpack & rest before Monday</td>
+                <td class="p-3.5 sm:p-4 font-medium text-emerald-900">Home in Hyderabad</td>
+                <td class="p-3.5 sm:p-4"><span class="px-2 py-0.5 rounded bg-emerald-200 text-emerald-900 font-semibold text-xs">Ready for Mon</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- TAB 3: NEW YEAR TEMPLE GUIDE -->
+    <!-- ========================================================================= -->
+    <div id="tab-temple" class="tab-content hidden space-y-6">
+      <div class="glass-card rounded-2xl border border-amber-200 shadow-sm p-6 bg-gradient-to-br from-amber-50/50 to-orange-50/30">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-10 h-10 rounded-xl bg-amber-500 text-white flex items-center justify-center font-bold text-lg">🪔</div>
+          <div>
+            <h3 class="text-xl font-bold text-slate-900">Sree Padmanabhaswamy Temple &bull; New Year Darshan Guide</h3>
+            <p class="text-xs text-amber-900 font-medium">Crucial rules & preparation for January 1st early morning visit</p>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-2">
+          <!-- Timings -->
+          <div class="bg-white rounded-xl p-5 border border-amber-100 shadow-sm">
+            <h4 class="font-bold text-slate-900 text-sm mb-3 flex items-center gap-2">
+              <span class="text-amber-600 font-bold">⏰</span> Recommended Darshan Slots
+            </h4>
+            <div class="space-y-3 text-xs text-slate-600">
+              <div class="p-2.5 rounded-lg bg-amber-50/70 border border-amber-200/60">
+                <span class="font-bold text-amber-950 block">Target Slot (Recommended):</span>
+                <strong>06:30 AM – 07:00 AM</strong>. Line up outside East Gate by 05:45 AM. It offers natural morning light and a manageable queue.
+              </div>
+              <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200">
+                <span class="font-bold text-slate-800 block">Nirmalya Darshanam:</span>
+                03:30 AM – 04:45 AM (Strictly for very early risers; holy first viewing).
+              </div>
+              <div class="p-2.5 rounded-lg bg-slate-50 border border-slate-200">
+                <span class="font-bold text-slate-800 block">Mid-Morning Slot:</span>
+                08:30 AM – 10:00 AM (Queue can stretch up to 2 hours on Jan 1).
+              </div>
+            </div>
+          </div>
+
+          <!-- Dress Code -->
+          <div class="bg-white rounded-xl p-5 border border-amber-100 shadow-sm">
+            <h4 class="font-bold text-slate-900 text-sm mb-3 flex items-center gap-2">
+              <span class="text-amber-600 font-bold">👘</span> Strict Kerala Dress Code
+            </h4>
+            <div class="space-y-3 text-xs text-slate-600">
+              <div>
+                <strong class="text-slate-800 block mb-1">Men:</strong>
+                Must wear a <strong>Dhoti / Mundu</strong> around the waist. Chest/torso must remain bare. An <em>Angavastram</em> (shawl) may be draped over the shoulders. Pants, shirts, and dhotis wrapped over trousers are strictly turned away.
+              </div>
+              <div>
+                <strong class="text-slate-800 block mb-1">Women:</strong>
+                Must wear a traditional <strong>Saree</strong> or <strong>Set-Mundu</strong>. Young girls can wear long skirts/pavada. Salwar-kameez, jeans, and western apparel are strictly barred.
+              </div>
+              <div class="text-amber-700 bg-amber-50 p-2 rounded text-[11px]">
+                💡 <em>Dhotis are readily available in shops outside the temple gates for ~₹100–₹150 if needed.</em>
+              </div>
+            </div>
+          </div>
+
+          <!-- Strict Security Rules -->
+          <div class="bg-white rounded-xl p-5 border border-amber-100 shadow-sm">
+            <h4 class="font-bold text-slate-900 text-sm mb-3 flex items-center gap-2">
+              <span class="text-amber-600 font-bold">🚫</span> Electronic & Belongings Ban
+            </h4>
+            <div class="space-y-2 text-xs text-slate-600">
+              <p>Due to high-security classification and hidden vault treasures, the temple maintains zero tolerance for:</p>
+              <ul class="list-disc list-inside space-y-1 text-slate-700 font-medium">
+                <li>Mobile phones & smartwatches</li>
+                <li>Cameras or digital electronics</li>
+                <li>Leather belts, pouches, and big wallets</li>
+              </ul>
+              <div class="p-3 bg-emerald-50 rounded-lg border border-emerald-200 text-emerald-900 mt-3 text-xs">
+                <strong>Why East Fort Stay is Ideal:</strong> Since your hotel is just a 5-minute walk from East Fort, leave all gadgets safely locked inside your hotel room safe and carry only cash/ID!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- TAB 4: LOGISTICS & BUDGET ESTIMATES -->
+    <!-- ========================================================================= -->
+    <div id="tab-logistics" class="tab-content hidden space-y-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        <!-- Travel Distances -->
+        <div class="glass-card rounded-2xl border border-slate-200 shadow-sm p-6">
+          <h3 class="text-base font-bold text-slate-900 mb-4 flex items-center gap-2">
+            <span>🚗</span> Road Distances & Driving Times
+          </h3>
+          <div class="space-y-3 text-xs">
+            <div class="flex justify-between items-center py-2 border-b border-slate-100">
+              <span class="text-slate-600">Cochin Airport &rarr; Munnar</span>
+              <span class="font-semibold text-slate-900">107 km &bull; 3.5 hrs</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-slate-100">
+              <span class="text-slate-600">Munnar &rarr; Thekkady (Kumily)</span>
+              <span class="font-semibold text-slate-900">90 km &bull; 3 hrs</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-slate-100">
+              <span class="text-slate-600">Thekkady &rarr; Alleppey</span>
+              <span class="font-semibold text-slate-900">139 km &bull; 4 hrs</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-slate-100">
+              <span class="text-slate-600">Alleppey &rarr; Jatayu &rarr; Varkala</span>
+              <span class="font-semibold text-slate-900">139 km &bull; 3.5 hrs</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-slate-100">
+              <span class="text-slate-600">Varkala &rarr; Kovalam / Poovar</span>
+              <span class="font-semibold text-slate-900">75 km &bull; 2 hrs</span>
+            </div>
+            <div class="flex justify-between items-center py-2 border-b border-slate-100">
+              <span class="text-slate-600">East Fort &rarr; Trivandrum Central (TVC)</span>
+              <span class="font-semibold text-emerald-700">1.5 km &bull; 6 mins</span>
+            </div>
+            <div class="flex justify-between items-center pt-2 font-bold text-slate-900">
+              <span>Total Driving Running (with local sights):</span>
+              <span>~780 – 850 km</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Activity Costs from Video -->
+        <div class="glass-card rounded-2xl border border-slate-200 shadow-sm p-6">
+          <h3 class="text-base font-bold text-slate-900 mb-4 flex items-center gap-2">
+            <span>🎟️</span> Activity Entry & Ticket Reference (Per Person)
+          </h3>
+          <div class="grid grid-cols-2 gap-3 text-xs">
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
+              <span class="text-slate-500 block">Eravikulam Park:</span>
+              <span class="font-bold text-slate-800">₹200 / person</span>
+            </div>
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
+              <span class="text-slate-500 block">Tata Tea Museum:</span>
+              <span class="font-bold text-slate-800">₹150 / person</span>
+            </div>
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
+              <span class="text-slate-500 block">Thekkady Shows (Combo):</span>
+              <span class="font-bold text-slate-800">₹300 / person</span>
+            </div>
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
+              <span class="text-slate-500 block">Periyar Lake Boat:</span>
+              <span class="font-bold text-slate-800">₹75 (Bus) + ₹255 (Boat)</span>
+            </div>
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
+              <span class="text-slate-500 block">Shikara Ride (Alleppey):</span>
+              <span class="font-bold text-slate-800">~₹1,000 / boat (1–2 hrs)</span>
+            </div>
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
+              <span class="text-slate-500 block">Jatayu Earth's Center:</span>
+              <span class="font-bold text-slate-800">~₹600 (with cable car)</span>
+            </div>
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
+              <span class="text-slate-500 block">Poovar Mangrove Boat:</span>
+              <span class="font-bold text-slate-800">~₹2,000 / boat</span>
+            </div>
+            <div class="p-3 bg-slate-50 rounded-lg border border-slate-100">
+              <span class="text-slate-500 block">Kovalam Lighthouse:</span>
+              <span class="font-bold text-slate-800">₹20 / person</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer Attribution -->
+  <footer class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 pt-4 text-center border-t border-slate-200 text-slate-500 text-xs">
+    <p class="flex items-center justify-center gap-1.5 font-medium text-slate-600">
+      <span>Custom Itinerary Designed & Curated by</span>
+      <span class="px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-800 font-bold text-xs shadow-sm">Sagar</span>
+      <span>• Dec 2026 – Jan 2027</span>
+    </p>
+  </footer>
+
+  <script>
+    // Tab switching logic
+    function switchTab(tabId) {
+      // Hide all contents
+      document.querySelectorAll('.tab-content').forEach(el => el.classList.add('hidden'));
+      // Remove active states from buttons
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('bg-emerald-700', 'text-white');
+        btn.classList.add('text-slate-600', 'hover:text-slate-900', 'hover:bg-slate-100');
+      });
+
+      // Show selected tab content
+      const targetContent = document.getElementById('tab-' + tabId);
+      if (targetContent) targetContent.classList.remove('hidden');
+
+      // Set active button
+      const targetBtn = document.getElementById('tabBtn-' + tabId);
+      if (targetBtn) {
+        targetBtn.classList.add('bg-emerald-700', 'text-white');
+        targetBtn.classList.remove('text-slate-600', 'hover:text-slate-900', 'hover:bg-slate-100');
+      }
+    }
+
+    // Show temporary notification toast
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      const toastMsg = document.getElementById('toastMsg');
+      toastMsg.textContent = msg;
+      toast.classList.remove('translate-y-20', 'opacity-0');
+      setTimeout(() => {
+        toast.classList.add('translate-y-20', 'opacity-0');
+      }, 3000);
+    }
+
+    // Copy formatted itinerary to clipboard
+    function copyItinerary() {
+      const textPlan = `KERALA EXPEDITION 2026–27
+Planned & Curated by: Sagar
+Dates: Dec 24, 2026 - Jan 3, 2027 (11 Days)
+
+Dec 24 (Thu): Morning flight HYD->COK -> Drive to Munnar (Reach by 5 PM) [Stay: Munnar]
+Dec 25 (Fri): Eravikulam National Park, KDHP Tea Museum, Mattupetty Dam [Stay: Munnar]
+Dec 26 (Sat): Munnar -> Thekkady (Spice garden, Kathakali & Kalaripayattu shows) [Stay: Thekkady]
+Dec 27 (Sun): Periyar Lake boat safari -> Drive to Alleppey [Stay: Alleppey]
+Dec 28 (Mon): Alleppey narrow canal Shikara ride & Kuttanad village life [Stay: Alleppey]
+Dec 29 (Tue): Alleppey -> Jatayu Earth's Center -> Varkala North Cliff [Stay: Varkala]
+Dec 30 (Wed): Varkala coastal day, cliff cafes & beach relaxation [Stay: Varkala]
+Dec 31 (Thu): Varkala -> Poovar mangrove safari -> Check-in East Fort Trivandrum [Stay: Trivandrum]
+Jan 01 (Fri): 06:30 AM New Year Darshan at Padmanabhaswamy Temple -> Azhimala Shiva Temple -> Kovalam [Stay: Trivandrum]
+Jan 02 (Sat): Board Sabari Express (#17229) from Trivandrum Central at 06:45 AM
+Jan 03 (Sun): Arrive at Secunderabad (SC) at 11:00 AM`;
+
+      const tempTextArea = document.createElement('textarea');
+      tempTextArea.value = textPlan;
+      document.body.appendChild(tempTextArea);
+      tempTextArea.select();
+      try {
+        document.execCommand('copy');
+        showToast('Itinerary copied to clipboard!');
+      } catch (err) {
+        showToast('Failed to copy. Please copy manually.');
+      }
+      document.body.removeChild(tempTextArea);
+    }
+  </script>
+</body>
+</html>
